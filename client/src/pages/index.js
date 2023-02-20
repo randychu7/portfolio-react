@@ -7,7 +7,6 @@ import { BiMenu } from "react-icons/bi";
 import { FiSearch } from 'react-icons/fi';
 import { FaBeer } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-import './globals.css';
 
 
 export default function Home() {
@@ -27,15 +26,16 @@ export default function Home() {
 
           
 
-          <nav class = "py-10 mb-12 ">
+          <nav class = "py-5 mb-12 fixed top-0 left-0 right-0 w-full p-7 bg-stone-50">
             <ul id="navbar" class = "flex items-center justify-between">
                 <h1 className="text-xl mr-auto">Randy Chu</h1>
-                <li><a href="#" class = "hidden md:flex pl-4 pr-4">Work Experience</a></li>
+                <li><a href="#" class = "hidden md:flex pl-4 pr-4">Bio</a></li>
+                <li><a href="#" class = "hidden md:flex pl-4 pr-4">Skills</a></li>
                 <li><a href="#" class = "hidden md:flex pl-4 pr-4">Projects</a></li>
                 <li><a href="#" class = "hidden md:flex pl-4 pr-4">Contact Me</a></li>
-                <li><a href="#" class = "pl-4 pr-6">Resume</a></li>
-                <li><a href="#" class = "pl-6 pr-8"><BsFillMoonStarsFill/></a></li>
-                <li><a id="hamburger" href="#" class = " md:hidden" ><BiMenu className= "w-10 h-10"/></a></li>
+                <li><a href="#" class = "p-4 rounded-full mr-4">Resume</a></li>
+                <li><a href="#" class = ""><BsFillMoonStarsFill class="bg-violet-500 hover:bg-violet-400 w-12 h-12 mr-2 p-3 rounded-md" /></a></li>
+                <li><a id="hamburger" href="#" class = " md:hidden" ><BiMenu className= "w-12 h-12 p-3 hover:bg-neutral-300 rounded-md"/></a></li>
             </ul>
             </nav>
 
