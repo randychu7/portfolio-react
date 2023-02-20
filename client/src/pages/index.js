@@ -25,6 +25,8 @@ export default function Home() {
 
         <section className="min-h-screen">
 
+          
+
           <nav class = "py-10 mb-12 ">
             <ul id="navbar" class = "flex items-center justify-between">
                 <h1 className="text-xl mr-auto">Randy Chu</h1>
