@@ -21,6 +21,7 @@ export default function Home() {
       </Head>
       <main className = "bg-white px-10">
 
+
         <section className="min-h-screen">
 
           <nav class = "py-10 mb-12 ">
