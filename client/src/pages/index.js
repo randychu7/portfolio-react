@@ -6,7 +6,22 @@ import{BsFillMoonStarsFill} from 'react-icons/bs'
 import { BiMenu } from "react-icons/bi";
 import { FiSearch } from 'react-icons/fi';
 import { FaBeer } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import './globals.css';
 
+function App() {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    function handleMouseMove(e) {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
+    }
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+}
 
 export default function Home() {
   return (
