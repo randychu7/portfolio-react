@@ -7,6 +7,8 @@ import { BiMenu } from "react-icons/bi";
 import { FiSearch } from 'react-icons/fi';
 import { FaBeer } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+import { GoMarkGithub } from "react-icons/go";
+import { AiFillLinkedin} from "react-icons/ai";
 
 
 export default function Home() {
@@ -24,11 +26,9 @@ export default function Home() {
 
         <section className="min-h-screen">
 
-          
-
-          <nav class = "py-5 mb-12 fixed top-0 left-0 right-0 w-full p-7 bg-stone-50">
+          <nav class = "py-5 mb-12 fixed top-0 left-0 right-0 w-full p-7 bg-stone-50" style={{ backdropFilter: 'blur(10px)' }}>
             <ul id="navbar" class = "flex items-center justify-between">
-                <h1 className="text-xl mr-auto">Randy Chu</h1>
+                <h2 className="text-2xl mr-auto">Randy Chu</h2>
                 <li><a href="#" class = "hidden md:flex pl-4 pr-4 hover:text-gray-400">Bio</a></li>
                 <li><a href="#" class = "hidden md:flex pl-4 pr-4 hover:text-gray-400">Skills</a></li>
                 <li><a href="#" class = "hidden md:flex pl-4 pr-4 hover:text-gray-400">Projects</a></li>
@@ -39,6 +39,22 @@ export default function Home() {
             </ul>
             </nav>
 
+            <div class="flex flex-col-reverse space-evenly">
+              <div className='icons mt-4 flex justify-center'><GoMarkGithub className='m-2 w-7 h-7'/> <AiFillLinkedin className='m-2 w-7 h-7'/> </div>
+              
+              <div className='w-full text-center mt-auto'><h1 className='text-4xl'>Randy Chu</h1>
+              <h3 className = "mt-1 text-gray-500">Software Developer / Soldier / Designer </h3>
+              <h3 className = "mt-4">High level experience in web development and web design, high level of knowledge in all computer science related tasks </h3>
+              </div>
+
+              <div className='w-full mt-36 text-center flex justify-center mb-10'> <img src="/images/grid_0.png" class= "w-56" alt="Example" /></div>
+
+              </div>
+
+        </section>
+
+        <section className ="min-h-screen">
+  
         </section>
     
       </main>
