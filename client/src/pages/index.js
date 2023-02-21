@@ -55,8 +55,6 @@ export default function Home() {
 
 
 
-
-
         </section>
 
         <section className ="min-h-screen">
