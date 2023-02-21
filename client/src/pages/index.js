@@ -39,15 +39,17 @@ export default function Home() {
             </ul>
             </nav>
 
-            <div class="flex flex-col-reverse space-evenly">
-              <div className='icons mt-4 flex justify-center'><GoMarkGithub className='m-2 w-7 h-7'/> <AiFillLinkedin className='m-2 w-7 h-7'/> </div>
+            <div class="flex flex-col-reverse mt-40 md:flex-row space-evenly">
+              <div className='icons mt-4 flex justify-center md:mt-0 md:flex-col md:w-56'><GoMarkGithub className='m-2 w-7 h-7'/> <AiFillLinkedin className='m-2 w-7 h-7'/> </div>
               
-              <div className='w-full text-center mt-auto'><h1 className='text-4xl'>Randy Chu</h1>
+              <div className='w-full text-center md:text-left mt-auto md:mt-8'>
+              <h1 className='text-4xl'>Randy Chu</h1>
               <h3 className = "mt-1 text-gray-500">Software Developer / Soldier / Designer </h3>
               <h3 className = "mt-4">High level experience in web development and web design, high level of knowledge in all computer science related tasks </h3>
+              <button className='bg-violet-600 p-3 mt-5 rounded-md text-white'>Contact Me</button>
               </div>
 
-              <div className='w-full mt-36 text-center flex justify-center mb-10'> <img src="/images/grid_0.png" class= "w-56" alt="Example" /></div>
+              <div className='w-full text-center flex justify-center mb-10 md:mb-0 '> <img src="/images/grid_0.png" class= "w-56 md:w-80" alt="Example" /></div>
 
               </div>
 
